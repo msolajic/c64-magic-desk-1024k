@@ -5213,6 +5213,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="PIN31" library="SparkFun-Passives" deviceset="SOLDERJUMPER_2WAY" device="S"/>
 <part name="PIN1" library="SparkFun-Passives" deviceset="SOLDERJUMPER_2WAY" device="S"/>
 <part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
+<part name="LOCK" library="SparkFun-Passives" deviceset="SOLDERJUMPER_2WAY" device="S"/>
 </parts>
 <sheets>
 <sheet>
@@ -5236,6 +5237,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="PIN31" gate="G$1" x="124.46" y="10.16" rot="R270"/>
 <instance part="PIN1" gate="G$1" x="111.76" y="10.16" rot="R270"/>
 <instance part="S1" gate="1" x="30.48" y="10.16" rot="R90"/>
+<instance part="LOCK" gate="G$1" x="66.04" y="55.88" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -5650,6 +5652,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="121.92" y1="-17.78" x2="116.84" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-17.78" x2="106.68" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LOCK" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="50.8" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
+<label x="60.96" y="48.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -5799,14 +5806,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="53.34" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="A" pin="I1"/>
-<wire x1="71.12" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
-<label x="63.5" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="A" pin="Q8"/>
 <wire x1="91.44" y1="12.7" x2="93.98" y2="12.7" width="0.1524" layer="91"/>
 <label x="93.98" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LOCK" gate="G$1" pin="3"/>
+<wire x1="66.04" y1="60.96" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<label x="60.96" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ROML" class="0">
@@ -5967,6 +5974,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="IC4" gate="G$1" pin="!WE"/>
 <wire x1="175.26" y1="20.32" x2="172.72" y2="20.32" width="0.1524" layer="91"/>
 <label x="167.64" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="IC2" gate="A" pin="I1"/>
+<pinref part="LOCK" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
