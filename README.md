@@ -3,7 +3,7 @@ Hardware design of Magic Desk compatible C64 cartridge up to 1024k
 
 This is the hardware part that accompanies the project of [Magic Desk Cartridge Generator](https://bitbucket.org/zzarko/magic-desk-cartridge-generator/)
 
-You can order these PCBs on [PCBWay](https://www.pcbway.com/project/shareproject/C64_Magic_Desk_1024k_Cartridge.html) and help with further C64 hardware developments!
+You can order these PCBs on [PCBWay](https://pcbway.com/g/YFnBAc) and help with further C64 hardware developments!
 
 ![PCB Top](./MDCC_1024k_Top.png)
 
